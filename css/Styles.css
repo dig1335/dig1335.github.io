@@ -1,0 +1,232 @@
+
+
+.container-fluid{
+	text-align: center
+	}
+	
+#padbox20{
+
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-right:20px;
+	padding-left:20px
+	}
+.sticky-top {
+    top:60px;
+    background-color: white;
+}
+.main-ct {
+  height:700px;
+  position:relative;
+}
+.fixed-ct {
+  position: sticky;
+  top:60px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.logo-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+
+  
+}
+
+/* to center flex-items */
+.flex-item {
+   margin: auto;
+}
+body, html {
+    height: 100%;
+}
+
+.hero-image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/untitled1.jpg);
+  height: 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/GGbasin.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text but{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ececec;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text but:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#thumbs {   
+  width: 1000px;
+  height: 1000px;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+
+     text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+#thumbs a {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+		<!-- Stack side by side images -->
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: centre;
+  width: 33%;
+  padding: 1px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container33 {
+  position: relative;
+  width: 33%;
+}
+
+.container66 {
+  position: relative;
+  width: 66%;
+}
+
+.container50 {
+  position: relative;
+  width: 50%;
+}
+
+.container25 {
+  position: relative;
+  width: 25%;
+max-width: 25%;
+}
+
+.container75 {
+  position: relative;
+  width: 75%;
+}
+
+.center {
+  position: absolute;
+  top: 0%;
+  width: 50%;
+  text-align: center;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container33:hover .image {
+  opacity: 0.2;
+}
+
+.container33:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #222831;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 550px) {
+  .container33 {
+    width: 100%;
+  }
+}
+
+					<!-- add a blockquote --> 
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #222831;
+    border-radius: 15px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
